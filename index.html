@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam de Gonzalo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Steam de Gonzalo</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="developer.html">Desarrolladores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bienvenido al Steam de Gonzalo</h1>
+            <p>Descubre los mejores juegos en nuestra galería interactiva. Filtra, explora y disfruta de una experiencia gamer única.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Juegos:</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="action">Acción</button>
+                <button class="filter-btn" data-filter="comedy">Comedia</button>
+                <button class="filter-btn" data-filter="drama">Drama</button>
+            </div>
+            <div class="movie-container"></div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="Game Poster">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <div class="button-container">
+                <button class="favorite-btn">
+                    <i class="fas fa-star"></i> Favorito
+                </button>
+                <button class="play-btn" id="play-btn">
+                    <i class="fas fa-gamepad"></i> Jugar
+                </button>
+            </div>
+            <div id="game-controls" class="game-controls" style="display: none;">
+                <div class="arrow-container">
+                    <button class="arrow up"><i class="fas fa-arrow-up"></i></button>
+                    <button class="arrow left"><i class="fas fa-arrow-left"></i></button>
+                    <button class="arrow down"><i class="fas fa-arrow-down"></i></button>
+                    <button class="arrow right"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
